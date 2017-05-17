@@ -14,6 +14,15 @@ public class Item {
     public Item() {
     }
 
+    public Item(String itemName, User itemUser) {
+        this.itemName = itemName;
+        this.itemUser = itemUser;
+    }
+
+    public Item(String itemName) {
+        this.itemName = itemName;
+    }
+
     public String getItemName() {
         return itemName;
     }
@@ -38,7 +47,7 @@ public class Item {
         this.itemAmount = itemAmmount;
     }
 
-    public User getItemUser() {
+    public User getItemUser(String s) {
         return itemUser;
     }
 
